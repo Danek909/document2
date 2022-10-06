@@ -114,21 +114,17 @@ body{
     color: #343434;
 }
 
-.section2Div{
-    display: flex;
+/* .section2Div{
     flex-wrap: wrap;
-    width: 270px;
-    height: 283px;
     border-radius: 10px;
     border-color: #fff;
-    margin-right: 30px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
-}
+} */
 
-.imgDiv{
+/* .imgDiv{
     width: 270px;
     height: 160px;
-}
+} */
 
 .sectionH2Audi{
     font-size: 20px;
@@ -391,9 +387,11 @@ body{
 
 .slick-dotted.slick-slider{
     max-width: 1200px;
+    background: rgba(52, 108, 217, 0.12);
     width: 100%;
     margin: 0 auto;
 }
+
 
 .subtaitle{
     display: flex;
@@ -423,12 +421,6 @@ body{
 .slick-dots .slick-active{
     background-color: transparent;
     background-color: #FF2E63;
-}
-
-.sectionSlider{
-    background: rgba(52, 108, 217, 0.12);
-    height: 385px;
-    margin-bottom: 100px;
 }
 
 .slick-dots{

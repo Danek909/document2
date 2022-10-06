@@ -8,3 +8,13 @@ $('.slider').slick({
     speed:1000,
   });
 });
+
+$(document).ready(function(){
+  $('.slider_2').slick({
+      infinite: true,
+      slidesToScroll: 1,
+      slidesToShow: 3,
+      arrows:true,
+      speed:1000,
+    });
+  });
