@@ -49,7 +49,7 @@ body{
 
 .section1Logo{
     width: 137px;
-    height: 37px;
+    height: 27px;
 }
 
 .header{
@@ -332,21 +332,19 @@ body{
 .section3Strilka{
     width: 32px;
     height: 20px;
-    padding: 0 110px;
 }
 
 .section3Text1{
     font-size:16px;
     color: #343434;
-    padding: 0px 50px;
     text-align: center;
     width: 250px;
-    height: 87px;
+    height: 250px;
+    margin: 0 auto;
 }
 
 .sectionText{
     display: flex;
-
     margin-left: 7px;
     max-width: 1260px;
 }
