@@ -9,10 +9,11 @@
     <title>Document2</title>
 </head>
 <body>
-    <header class="header">
-        <div class="heder">
-            <img class="section1Logo" src=".//images/03.png" alt="deleted">
-            <ul class="ulHeder">
+    <header id="heder" class="header">
+        <div class="heder" id="divHeder">
+            <p id="text" class="section1Logo">LOGO <span id="spantext" class="spanAuto">AUTO</span></p> 
+        <nav class="navHeder">
+            <ul id="ultext" class="ulHeder">
                 <a>
                     Latest Competitions
                 </a>
@@ -32,8 +33,13 @@
                     How it Works
                 </a>
             </ul>
-            <h2 class="hederLogin">login</h2>
-            <button class="hederButton">Register</button>
+        </nav>
+
+        <div id="button" class="burgerMenuDiv">
+            <span id="burgerSpan" class="burger_span"></span>
+        </div>
+            <h2 id="texLogin" class="hederLogin">login</h2>
+            <button id="buttonClik" class="hederButton">Register</button>
         </div>
     </header>
 
@@ -43,7 +49,7 @@
                 <span class="sectio1Span">next winner?</span></h1>
                 <button class="section1Button">Enter now</button>
             </div>
-            <div>
+            <div  class="imageAuto">
                 <img class="section1Auto" src="../document2/images/01.png" alt="deleted">
                 <img class="sectio1Img4" src="../document2/images/4.png" alt="deleted">
             </div>
@@ -99,6 +105,52 @@
                     </a>
                 </div>
             </div>
+            <div class="section2Div">
+                <img class="imgDiv" src="images/05.jpg" alt="deletet">
+                <h2 class="texTopDiv">2020 Audi S5 Coupe</h2>
+                <h2 class="sectiohH2Dolars">$19.99  <span class="dolarsSection2">$54.68</span></h2>
+                <div class="bottomConteiner">
+                <h2 class="section2Text">5878 tickets remaining</h2>
+                <a href="#" class="some_class">
+                    <span></span>
+                </a>
+                </div>
+            </div>
+            <div class="section2Div">
+                <img class="imgDiv2" src="images/06.jpg" alt="deletet">
+                <h2 class="texTopDiv">2016 Ford Mustang GT</h2>
+                <h2 class="div2Dolars">$7.99 <span class="dolarsMustang">$9.68</span></h2>
+                <div class="bottomConteiner">
+                    <h2 class="div2text">3290 tickets remaining</h2>
+                    <a href="#" class="some_class">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="section2Div">
+                <img src="images/07.jpg" alt="deletet">
+                <h2 class="texTopDiv">2020 Bugatti Chiron</h2>
+                <h2 class="divDolar">$0.99 <span class="spanDolar">$1.39</span></h2>
+                <div class="bottomConteiner">
+                 <h2 class="divText">3290 tickets remaining</h2>
+                <a href="#" class="some_class">
+                    <span></span>
+                </a>
+                </div>
+            </div>
+            
+            <div class="section2Div">
+                <img src="images/08.jpg" alt="deletet">
+                <h2 class="texTopDiv">2019 Porsche 911 Carrera</h2>
+                <h2 class="dolar">$1.99 <span class="dolar_span">$2.99</span></h2>
+                <div class="bottomConteiner">
+                <h2 class="div4text">484 tickets remaining</h2>
+                    <a href="#" class="some_class">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     </section>
@@ -108,30 +160,50 @@
         <div class="sectionText">
             <div class="section3Text1">
                 <img class="section3Img" src="images/10.jpg" alt="deletet">
+                <p class="pTextSection3">
                 Choose a competition and <br>
                 how many entries you would like
+                </p>
             </div>
-            <img class="section3Strilka" src="images/11.jpg" alt="deletet">
+
+            <a class="section3Strilka">
+                <span></span>
+            </a>
+            
             <div class="section3Text1">
                 <img class="section3Img" src="images/12.jpg" alt="deletet">
+                <p class="pTextSection3">
                 Answer the qualifying question<br> 
                 (be sure to answer correctly!) <br>
                 and complete payment<br>
+                </p>
             </div>
-            <img class="section3Strilka" src="images/11.jpg" alt="deletet">
+
+            <a class="section3Strilka">
+                <span></span>
+            </a>
+            
             <div class="section3Text1">
                 <img class="section3Img" src="images/12.jpg" alt="deletet">
-                Tickets for all correct answers are<br>
-                entered into the draw, streamed <br>
-                LIVE on Facebook using Google’s <br>
-                random number generator<br>
+                <p class="pTextSection3">
+                    Tickets for all correct answers are<br>
+                    entered into the draw, streamed <br>
+                    LIVE on Facebook using Google’s <br>
+                    random number generator<br>
+                </p>
             </div>
-            <img class="section3Strilka" src="images/11.jpg" alt="deletet">
+
+            <a class="section3Strilka">
+                <span></span>
+            </a>
+            
             <div class="section3Text1">
                 <img class="section3Img" src="images/12.jpg" alt="deletet">
-                If you win, we may try to contact <br>
-                you whilst live on Facebook, so <br>
-                be prepared!<br>
+                <p class="pTextSection3">
+                    If you win, we may try to contact <br>
+                    you whilst live on Facebook, so <br>
+                    be prepared!<br>
+                </p>
             </div>
         </div>
     </section>
@@ -176,6 +248,26 @@
         <p class="section3Logo">Latest Winners</p>    
         <div class="divSection4">
             <div class="sliderBottom">
+            <div class="divLogoAuto">
+                <img class="section4Img" src="images/18.jpg" alt="deletet">
+                <p class="textAutoS4">Ferrari 458</p>
+                <p class="textAutoS3">12 November 2020</p>
+            </div>
+            <div class="section3Auto">
+                <img class="section4Img" src="images/19.jpg" alt="deletet">
+                <p class="textAutoS4">Aquila Gullwing</p>
+                <p class="textAutoS3">9 November 2020</p>
+            </div>
+            <div class="section3Auto">
+                <img class="section4Img" src="images/20.jpg" alt="deletet">
+                <p class="textAutoS4">2020 Audi S5 Coupe</p>
+                <p class="textAutoS3">5 November 2020</p>
+            </div>
+            <div class="section3Auto">
+                <img class="section4Img" src="images/21.jpg" alt="deletet">
+                <p class="textAutoS4">Ferrari Purosangue SUV</p>
+                <p class="textAutoS3">25 September 2020</p>
+            </div>
             <div class="divLogoAuto">
                 <img class="section4Img" src="images/18.jpg" alt="deletet">
                 <p class="textAutoS4">Ferrari 458</p>
