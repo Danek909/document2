@@ -3,7 +3,7 @@ $('.slider').slick({
     infinite: true,
     slidesToScroll: 1,
     slidesToShow: 1,
-    arrows:true,
+    arrows:false,
     dots:true,
     speed:1000,
   });
@@ -14,17 +14,27 @@ $(document).ready(function(){
       infinite: true,
       slidesToScroll: 1,
       slidesToShow: 4,
-      arrows:true,
+      arrows:false,
       speed:1000,
+      responsive: [
+
+      {
+      breakpoint: 1024,
+      settings:{
+          slidesToShow: 3,
+      }
+      }
+    ]
     });
-  }); 
+      }); 
+    
 
   $(document).ready(function(){
     $('.sliderBottom').slick({
         infinite: true,
         slidesToScroll: 1,
         slidesToShow: 4,
-        arrows:true,
+        arrows:false,
         speed:1000,
       });
     });
@@ -96,6 +106,22 @@ $(document).ready(function(){
     const heder = document.getElementById('button');
     if(factory){
         const isHeder = document.getElementById('divHeder');
+        factory.addEventListener("click", function(e){
+            isHeder.classList.toggle('_activee');
+        }); 
+    }
+
+    const div = document.getElementById('button');
+    if(factory){
+        const isHeder = document.getElementById('divImg1');
+        factory.addEventListener("click", function(e){
+            isHeder.classList.toggle('_activee');
+        }); 
+    }
+
+    const img = document.getElementById('button');
+    if(factory){
+        const isHeder = document.getElementById('kards');
         factory.addEventListener("click", function(e){
             isHeder.classList.toggle('_activee');
         }); 
