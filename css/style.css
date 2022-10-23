@@ -980,6 +980,23 @@ body{
 }
 
 @media (max-width: 425px){
+
+    .section3Strilka{
+        transform: rotate(90deg);
+        position: relative;
+        top: 181px;
+        right: 175px;
+        margin-top: 5px;
+    }
+
+    .pTextSection3{
+        padding-bottom: 110px;
+    }
+
+    .section3Text1{
+        margin: 0 auto;
+    }
+
     .slick-dots{
         margin: 0 100px;
     }
@@ -1009,6 +1026,10 @@ body{
 }
 
 @media(max-width: 375px) {
+
+    .section3Strilka{
+        right: 155px;
+    }
     .section1Text{
         font-size: 40px;
     } 
@@ -1025,22 +1046,6 @@ body{
     .section4Img{
         min-width: 280px;
     }
-
-    .section3Strilka{
-        transform: rotate(90deg);
-        position: relative;
-        top: 181px;
-        right: 139px;
-        margin-top: 5px;
-    }
-
-    .pTextSection3{
-        padding-bottom: 110px;
-    }
-
-    .section3Text1{
-        margin: 0 auto;
-    }
 }
 
 @media(max-width: 320px){
@@ -1052,5 +1057,8 @@ body{
         margin-left: -70px;
     }
 
+    .section3Strilka{
+        right: 145px;
+    }
     
 }
