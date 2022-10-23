@@ -23,7 +23,14 @@ $(document).ready(function(){
       settings:{
           slidesToShow: 3,
       }
-      }
+      } ,
+
+      {
+        breakpoint: 610,
+        settings:{
+            slidesToShow: 2,
+        }
+        } 
     ]
     });
       }); 
@@ -36,6 +43,22 @@ $(document).ready(function(){
         slidesToShow: 4,
         arrows:false,
         speed:1000,
+        responsive: [
+
+            {
+            breakpoint: 1024,
+            settings:{
+                slidesToShow: 3,
+            }
+            } ,
+
+            {
+                breakpoint: 610,
+                settings:{
+                    slidesToShow: 2,
+                }
+                } 
+          ]
       });
     });
 
