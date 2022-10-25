@@ -19,12 +19,21 @@ $(document).ready(function(){
       responsive: [
 
       {
-      breakpoint: 1024,
+      breakpoint: 1200,
       settings:{
-          slidesToShow: 2,
-          slidesToShow: 2,
+          slidesToShow: 3,
+          slidesToShow: 3,
       }
       } ,
+
+      {
+        breakpoint: 950,
+        settings:{
+            slidesToShow: 2,
+            slidesToShow: 2,
+        }
+        } ,
+      
 
       {
         breakpoint: 610,
@@ -48,12 +57,20 @@ $(document).ready(function(){
         responsive: [
 
             {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings:{
-                slidesToShow: 2,
-                slidesToShow: 2,
+                slidesToShow: 3,
+                slidesToShow: 3,
             }
             } ,
+
+            {
+                breakpoint: 950,
+                settings:{
+                    slidesToShow: 2,
+                }
+                } ,
+
 
             {
                 breakpoint: 610,
@@ -149,6 +166,14 @@ $(document).ready(function(){
     const img = document.getElementById('button');
     if(factory){
         const isHeder = document.getElementById('kards');
+        factory.addEventListener("click", function(e){
+            isHeder.classList.toggle('_activee');
+        }); 
+    }
+
+    const body = document.getElementById('button');
+    if(factory){
+        const isHeder = document.getElementById('lock');
         factory.addEventListener("click", function(e){
             isHeder.classList.toggle('_activee');
         }); 
