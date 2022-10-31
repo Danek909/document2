@@ -25,6 +25,13 @@ $(document).ready(function(){
           slidesToShow: 3,
       }
       } ,
+      {
+        breakpoint: 1024,
+        settings:{
+            slidesToShow: 3,
+            
+        }
+        } ,
 
       {
         breakpoint: 950,
@@ -63,6 +70,7 @@ $(document).ready(function(){
                 slidesToShow: 3,
             }
             } ,
+            
 
             {
                 breakpoint: 950,
@@ -78,7 +86,9 @@ $(document).ready(function(){
                     slidesToShow: 2,
                     slidesToShow: 1,
                 }
-                } 
+                } ,
+
+                
           ]
       });
     });
