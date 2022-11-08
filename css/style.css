@@ -650,7 +650,8 @@ body {
 
 .ulLi li{
     list-style: none;
-    padding-bottom: 20px;
+    padding-left: 30px;
+
 }
 
 .ulLi a:hover {
@@ -1030,10 +1031,11 @@ body {
 
     .ulLi{
         padding: 0;
-        flex-direction: column;
+        margin: 0;
+        flex-direction: column; 
     }
-
-    .ulLi a{
+   
+    .ulLi li{
         padding-bottom: 20px;
         padding-left: 16px;
     }
