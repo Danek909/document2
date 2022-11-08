@@ -95,7 +95,7 @@ $(document).ready(function(){
 
     const factory = document.getElementById('button');
     if(factory){
-        const isHeder = document2.getElementById('ultext');
+        const isHeder = document.getElementById('ultext');
         factory.addEventListener("click", function(e){
             isHeder.classList.toggle('_activee');
         }); 
