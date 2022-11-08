@@ -95,7 +95,23 @@ $(document).ready(function(){
 
     const factory = document.getElementById('button');
     if(factory){
-        const isHeder = document.getElementById('ultext');
+        const isHeder = document2.getElementById('ultext');
+        factory.addEventListener("click", function(e){
+            isHeder.classList.toggle('_activee');
+        }); 
+    }
+
+    const hederLogo= document.getElementById('button');
+    if(factory){
+        const isHeder = document.getElementById('hederLogo');
+        factory.addEventListener("click", function(e){
+            isHeder.classList.toggle('_activee');
+        }); 
+    }
+
+    const hederSpan= document.getElementById('button');
+    if(factory){
+        const isHeder = document.getElementById('hederSpan');
         factory.addEventListener("click", function(e){
             isHeder.classList.toggle('_activee');
         }); 

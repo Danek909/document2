@@ -1,5 +1,6 @@
 body {
     background-color: #fff;
+    margin: 0;
 }
 
 .sectio1Span {
@@ -14,9 +15,6 @@ body {
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-}
-
-.hederLogo_a {
     text-decoration: none;
 }
 
@@ -42,7 +40,7 @@ body {
 }
 
 .sectio1Img4 {
-    position: relative;
+    position: absolute;
     padding-top: 37px;
     width: 55%;
     left: 29%;
@@ -72,7 +70,7 @@ body {
     font-size: 16px;
     color: #fff;
     border-radius: 5px;
-    border-color: #346CD9;
+    border: 0px;
 }
 
 .spanAuto {
@@ -86,15 +84,16 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-    height: 40px;
+    height: 55px;
 }
 
 .heder {
     display: flex;
-    margin-top: 29px;
+    margin-top: 8px;
     max-width: 1230px;
     width: 100%;
     justify-content: space-between;
+    height: 55px;
 }
 
 .ulHeder a {
@@ -116,6 +115,10 @@ body {
     margin-top: 10px;
     align-items: center;
     padding: 0;
+}
+
+.ulHeder li{
+    list-style: none;
 }
 
 .hederMenu{
@@ -142,7 +145,7 @@ body {
     width: 110px;
     height: 40px;
     border-radius: 5px;
-    border-color: #FF2E63;
+    border: 0px;
     font-size: 16px;
     color: #fff;
     background-color: #FF2E63;
@@ -161,11 +164,12 @@ body {
     width: 100%;
     font-size: 36px;
     color: #343434;
+    margin-left: 30px;
 }
 
 .section2Div {
     width: 100%;
-    margin-left: 30px;
+    margin-left: 29px;
     border-radius: 10px;
     border-color: #fff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
@@ -178,7 +182,7 @@ body {
 .sectionH2Audi {
     font-size: 20px;
     color: #252A34;
-    font-weight: 700px;
+    font-weight: 700;
     margin-left: 20px;
     margin-bottom: 0px;
     margin-top: 20px;
@@ -372,6 +376,49 @@ body {
     border-radius: 10px 0;
 }
 
+.section3Strilka1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 10px 0;
+}
+
+.section3Strilka1 span{
+    position: relative;
+    width: 32px;
+    height: 4px;
+    background-color: #585858;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    display: block;
+}
+
+.section3Strilka1 span::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: -5px;
+    right: -4px;
+    background-color: #585858;
+    transform: rotate(41deg);
+}
+
+.section3Strilka1 span::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    top: 7px;
+    right: -2px;
+    background-color: #585858;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-36deg);
+}
+
+
 .section3Strilka span {
     position: relative;
     width: 32px;
@@ -488,7 +535,7 @@ body {
     padding-top: 30px;
     color: #343434;
     font-size: 16px;
-    padding-bottom: 130px;
+    padding-bottom: 40px;
 }
 
 .slick-dots li {
@@ -516,6 +563,7 @@ body {
     font-size: 36px;
     color: #343434;
     font-weight: 700;
+    margin-left: 30px;
 }
 
 .section4Img {
@@ -599,6 +647,10 @@ body {
     text-decoration: none;
 }
 
+.ulLi li{
+    list-style: none;
+}
+
 .ulLi a:hover {
     color: #343434;
 }
@@ -645,6 +697,7 @@ body {
 
     .slick-dots {
         bottom: 20px;
+        right: 75%;
     }
 
     .slaiderTextSpan {
@@ -681,7 +734,6 @@ body {
     .hederLogo {
         width: 200px;
         padding-left: 20px;
-        padding-bottom: 41px;
         font-weight: bold;
     }
 
@@ -713,6 +765,8 @@ body {
 
     .heder {
         position: fixed;
+        top: 0;
+        bottom: 0;
     }
 
     .hederLogo._activee {
@@ -725,6 +779,9 @@ body {
 
     .header {
         width: 100%;
+        background-color: cornsilk;
+        position: fixed;
+        z-index: 100;
     }
 
     .burgerMenu {
@@ -896,7 +953,7 @@ body {
     }
 
     .section1Text {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .header._activee {
@@ -930,7 +987,6 @@ body {
     }
 
     .heder._activee {
-        margin-top: 30px;
         transition: 0.3s;
     }
 
@@ -1005,17 +1061,9 @@ body {
        margin-bottom: 35px;
     }
 
-    .section3Strilka {
-        transform: rotate(90deg);
-        position: relative;
-        top: -15px;
-        left: 48%;
-        margin-top: 5px;
-    }
-
     .sectionText {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .divImgSlider {
@@ -1026,6 +1074,10 @@ body {
         margin-bottom: 161px;
     }
 
+    .slick-dots{
+        right: 65%;
+    }
+
     .ulLi {
         margin-right: 0px;
         flex-wrap: wrap;
@@ -1033,6 +1085,12 @@ body {
 
     .ulLi li {
         padding-top: 5px;
+    }
+}
+
+@media (max-width: 715px){
+    .section3Strilka1{
+        display: none;
     }
 }
 
@@ -1058,9 +1116,38 @@ body {
     .subtaitle {
         margin-bottom: 60px;
     }
+
+    .divImg{
+        margin-bottom: 235px;
+    }
    
     .footer{
         height: 100%;
+    }
+}
+
+@media (max-width: 485px){
+    .sectionText{
+        flex-direction: column;
+    }
+
+    .section3Strilka{
+        transform: rotate(90deg);
+        position: relative;
+        top: -15px;
+        left: 48%;
+        margin-top: 5px;
+    } 
+
+    .section3Strilka1{
+        display: block;
+    }
+    .section3Strilka1{
+        transform: rotate(90deg);
+        position: relative;
+        top: -15px;
+        left: 43%;
+        margin-top: 5px; 
     }
 }
 
@@ -1106,6 +1193,10 @@ body {
 
     .section1Text {
         font-size: 38px;
+    }
+
+    .divImg {
+        margin-bottom: 150px;
     }
 
     .slick-dots{
