@@ -119,6 +119,7 @@ body {
 
 .ulHeder li{
     list-style: none;
+    padding-bottom: 30px;
 }
 
 .hederMenu{
@@ -498,6 +499,7 @@ body {
     font-size: 20px;
     color: #343434;
     margin: 0 auto;
+    font-weight: 600;
 }
 
 .slick-next:before {
@@ -642,14 +644,13 @@ body {
     color: #fff;
     font-size: 14px;
     list-style-type: none;
-    padding-left: 30px;
     transition: 0.3s;
     text-decoration: none;
 }
 
 .ulLi li{
     list-style: none;
-    
+    padding-bottom: 20px;
 }
 
 .ulLi a:hover {
@@ -920,7 +921,7 @@ body {
         left: -100%;
         top: 0;
         transition: 0.3s;
-        margin-top: 470px;
+        margin-top: 430px;
     }
 
     .hederButton._activee {
@@ -940,7 +941,7 @@ body {
         left: -100%;
         top: 0;
         transition: 0.3s;
-        margin-top: 482px;
+        margin-top: 445px;
         margin-left: 100px
     }
 
