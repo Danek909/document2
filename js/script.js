@@ -93,14 +93,6 @@ $(document).ready(function () {
     });
 });
 
-const body = document.getElementById('button');
-if (factory) {
-    const isHeder = document.getElementById('lock');
-    factory.addEventListener("click", function (e) {
-        isHeder.classList.toggle('_activee');
-    });
-}
-
 const factory = document.getElementById('button');
 if (factory) {
     const isHeder = document.getElementById('ultext');
@@ -133,3 +125,10 @@ if (factory) {
     });
 }
 
+const body = document.getElementById('button');
+if (factory) {
+    const isHeder = document.getElementById('lock');
+    factory.addEventListener("click", function (e) {
+        isHeder.classList.toggle('_activee');
+    });
+}
