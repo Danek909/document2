@@ -30,7 +30,7 @@ body {
     justify-content: space-between;
 }
 
-.div__text{
+.div__text {
     width: 100%;
 }
 
@@ -117,12 +117,12 @@ body {
     padding: 0;
 }
 
-.ulHeder li{
+.ulHeder li {
     list-style: none;
     padding-bottom: 30px;
 }
 
-.hederMenu{
+.hederMenu {
     display: flex;
 }
 
@@ -176,7 +176,7 @@ body {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
 }
 
-.section2divImg img{
+.section2divImg img {
     width: 100%;
 }
 
@@ -377,7 +377,7 @@ body {
     border-radius: 10px 0;
 }
 
-.section3Strilka1{
+.section3Strilka1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +387,7 @@ body {
     border-radius: 10px 0;
 }
 
-.section3Strilka1 span{
+.section3Strilka1 span {
     position: relative;
     width: 32px;
     height: 4px;
@@ -396,7 +396,7 @@ body {
     display: block;
 }
 
-.section3Strilka1 span::after{
+.section3Strilka1 span::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -407,7 +407,7 @@ body {
     transform: rotate(41deg);
 }
 
-.section3Strilka1 span::before{
+.section3Strilka1 span::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -648,7 +648,7 @@ body {
     text-decoration: none;
 }
 
-.ulLi li{
+.ulLi li {
     list-style: none;
     padding-left: 30px;
 
@@ -673,16 +673,14 @@ body {
     text-decoration: none;
 }
 
-@media (min-width: 1240px){
-    .hederLogin{
+@media (min-width: 1240px) {
+    .hederLogin {
         margin-right: 30px;
         margin-left: 100px;
     }
 }
 
-@media (max-width: 1070px) {
-   
-}
+@media (max-width: 1070px) {}
 
 @media (max-width: 1044px) {
     .navHeder {
@@ -762,7 +760,7 @@ body {
         overflow: hidden;
     }
 
-    .section2._activee{
+    .section2._activee {
         display: none;
     }
 
@@ -772,9 +770,6 @@ body {
         bottom: 0;
     }
 
-    .hederLogo._activee {
-        color: #fff;
-    }
 
     .section2Div .slick-slide .slick-active {
         min-width: 280px;
@@ -820,12 +815,12 @@ body {
         position: absolute;
     }
 
-    .slick-dotted.slick-slider{
+    .slick-dotted.slick-slider {
         max-height: 365px;
         height: 100%;
     }
 
-    .ulHeder._activee {
+    .header._activee .ulHeder {
         top: 0;
         left: 0;
         background-color: #fff;
@@ -887,7 +882,7 @@ body {
         border-radius: 7px;
     }
 
-    .burgerMenuDiv._activee {
+    .header._activee .burgerMenuDiv {
         width: 24px;
         height: 24px;
         background-color: #fff;
@@ -898,20 +893,21 @@ body {
         transition: 0.5s;
     }
 
-    .burgerMenuDiv._activee::before {
+    .header._activee .burgerMenuDiv::before {
         transform: rotate(49deg);
         top: 20px;
         transition: all 0.3s ease 0s;
         background-color: black;
     }
 
-    .burgerMenuDiv._activee span {
+    .header._activee .burgerMenuDiv span {
         transform: rotate(-49deg);
         top: 20px;
         transition: all 0.3s ease 0s;
+        background-color: black;
     }
 
-    .burgerMenuDiv._activee::after {
+    .header._activee .burgerMenuDiv::after {
         transform: scale(0);
     }
 
@@ -925,7 +921,7 @@ body {
         margin-top: 430px;
     }
 
-    .hederButton._activee {
+    header._activee .hederButton{
         left: 0;
         top: 0;
         align-items: center;
@@ -933,6 +929,7 @@ body {
         position: absolute;
         z-index: 10;
         margin-left: 16px;
+        transition: 0.5s;
     }
 
     .hederLogin {
@@ -941,12 +938,12 @@ body {
         flex-direction: column;
         left: -100%;
         top: 0;
-        transition: 0.3s;
+        transition: 0.5s;
         margin-top: 445px;
         margin-left: 100px
     }
 
-    .hederLogin._activee {
+    .header._activee .hederLogin {
         left: 0;
         top: 0;
         position: absolute;
@@ -969,13 +966,18 @@ body {
         z-index: 100;
     }
 
-    .navHeder {
-        background-color: aqua;
-    }
-
-    .spanAuto._activee {
+    .header._activee .hederLogo{
         color: #fff;
         transition: 0.5s;
+    }
+
+    .header._activee .spanAuto{
+        color: #fff;
+        transition: 0.5s;
+    }
+
+    .navHeder {
+        background-color: aqua;
     }
 
     .section1Logo._activee {
@@ -989,7 +991,7 @@ body {
         background-color: black;
     }
 
-    .heder._activee {
+    .heder._activee{
         transition: 0.3s;
     }
 
@@ -1009,37 +1011,30 @@ body {
         padding-top: 0;
     }
 
-    .divImg._activee {
-        display: contents;
-    }
 
-    .section1Auto._activee {
-        display: contents;
-    }
-
-    .footer{
+    .footer {
         flex-direction: column;
         height: 100%;
         display: block;
     }
 
-    .footerLogo{
+    .footerLogo {
         margin-bottom: 30px;
         margin-top: 16px;
         margin-left: 16px;
     }
 
-    .ulLi{
+    .ulLi {
         padding: 0;
         margin: 0;
-        flex-direction: column; 
+        flex-direction: column;
     }
-   
-    .ulLi li{
+
+    .ulLi li {
         padding-bottom: 20px;
         padding-left: 16px;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -1062,7 +1057,7 @@ body {
     }
 
     .section3Text1 {
-       margin-bottom: 35px;
+        margin-bottom: 35px;
     }
 
     .sectionText {
@@ -1078,7 +1073,7 @@ body {
         margin-bottom: 161px;
     }
 
-    .slick-dots{
+    .slick-dots {
         right: 65%;
     }
 
@@ -1092,15 +1087,15 @@ body {
     }
 }
 
-@media (max-width: 715px){
-    .section3Strilka1{
+@media (max-width: 715px) {
+    .section3Strilka1 {
         display: none;
     }
 }
 
 @media (max-width: 610px) {
 
-    .div__1{
+    .div__1 {
         flex-wrap: wrap;
     }
 
@@ -1121,37 +1116,38 @@ body {
         margin-bottom: 60px;
     }
 
-    .divImg{
+    .divImg {
         margin-bottom: 235px;
     }
-   
-    .footer{
+
+    .footer {
         height: 100%;
     }
 }
 
-@media (max-width: 485px){
-    .sectionText{
+@media (max-width: 485px) {
+    .sectionText {
         flex-direction: column;
     }
 
-    .section3Strilka{
+    .section3Strilka {
         transform: rotate(90deg);
         position: relative;
         top: -15px;
         left: 48%;
         margin-top: 5px;
-    } 
+    }
 
-    .section3Strilka1{
+    .section3Strilka1 {
         display: block;
     }
-    .section3Strilka1{
+
+    .section3Strilka1 {
         transform: rotate(90deg);
         position: relative;
         top: -15px;
         left: 43%;
-        margin-top: 5px; 
+        margin-top: 5px;
     }
 }
 
@@ -1161,7 +1157,7 @@ body {
         font-size: 45px;
     }
 
-    .slick-dots{
+    .slick-dots {
         right: 28%;
     }
 
@@ -1203,7 +1199,7 @@ body {
         margin-bottom: 150px;
     }
 
-    .slick-dots{
+    .slick-dots {
         right: 24%;
     }
 
@@ -1216,7 +1212,7 @@ body {
         min-width: 280px;
     }
 
-    .section2H2{
+    .section2H2 {
         font-size: 32px;
         max-width: 280px;
         width: 100%;
