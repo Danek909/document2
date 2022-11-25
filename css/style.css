@@ -85,6 +85,7 @@ body {
     justify-content: center;
     margin: auto;
     height: 50px;
+    margin-top: 22px;
 }
 
 .heder {
@@ -165,15 +166,16 @@ body {
     width: 100%;
     font-size: 36px;
     color: #343434;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .section2Div {
     width: 100%;
-    margin-left: 29px;
+    margin-left: 15px;
     border-radius: 10px;
     border-color: #fff;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    margin-right: 15px;
 }
 
 .section2divImg img {
@@ -305,7 +307,7 @@ body {
 .some_class span {
     position: relative;
     width: 15px;
-    height: 4px;
+    height: 3px;
     background-color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
     display: block;
@@ -315,7 +317,7 @@ body {
     content: '';
     position: absolute;
     width: 12px;
-    height: 3px;
+    height: 2px;
     top: -3px;
     right: -4px;
     background-color: #fff;
@@ -326,12 +328,12 @@ body {
     content: '';
     position: absolute;
     width: 10px;
-    height: 3px;
-    top: 5px;
+    height: 2px;
+    top: 4px;
     right: -2px;
     background-color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
-    transform: rotate(-43deg);
+    transform: rotate(-40deg);
 }
 
 
@@ -499,7 +501,7 @@ body {
     font-size: 20px;
     color: #343434;
     margin: 0 auto;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .slick-next:before {
@@ -565,7 +567,7 @@ body {
     font-size: 36px;
     color: #343434;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .section4Img {
@@ -574,17 +576,19 @@ body {
 }
 
 .divLogoAuto {
-    margin-left: 30px;
+    margin-left: 15px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin-bottom: 100px;
+    margin-right: 15px;
 }
 
 .section3Auto {
-    margin-left: 30px;
+    margin-left: 15px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin-bottom: 100px;
+    margin-right: 15px;
 }
 
 .textAutoS4 {
@@ -615,6 +619,8 @@ body {
     font-weight: 700;
     padding-top: 6px;
     margin-left: 55px;
+    max-width: 158px;
+    width: 100%;
 }
 
 .ulText {
@@ -673,14 +679,26 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 1250px) {
+    .div__text{
+        padding-left: 15px;
+    }
+
+    .hederLogo{
+        padding-left: 15px;
+    }
+
+    .hederButton{
+        margin-right: 15px;
+    }
+}
+
 @media (min-width: 1240px) {
     .hederLogin {
         margin-right: 30px;
         margin-left: 100px;
     }
 }
-
-@media (max-width: 1070px) {}
 
 @media (max-width: 1044px) {
     .navHeder {
@@ -713,10 +731,6 @@ body {
         margin-right: 20px;
     }
 
-    .div__text {
-        padding-left: 20px;
-    }
-
     .section1Text {
         margin: 0;
         font-size: 47px;
@@ -734,7 +748,6 @@ body {
 
     .hederLogo {
         width: 200px;
-        padding-left: 20px;
         font-weight: bold;
     }
 
@@ -751,10 +764,20 @@ body {
         font-size: 18px;
     }
 
+    
+
 }
 
 
 @media (max-width: 990px) {
+
+    .header._activee.ulHeder{
+        overflow: hidden;
+    }
+
+    .divImg {
+        margin-top: 35px;
+    }
 
     body._activee {
         overflow: hidden;
@@ -780,6 +803,7 @@ body {
         background-color: ivory;
         position: fixed;
         z-index: 100;
+        margin-top: 0px;
     }
 
     .burgerMenu {
@@ -795,6 +819,22 @@ body {
         transition: 0.3s;
         padding: 0;
         flex-wrap: nowrap;
+    }
+
+    .header._activee .ulHeder {
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        max-width: 990px;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        margin-top: 50px;
+        position: fixed;
+        z-index: 10;
+        transition: 0.5s;
+        overflow: auto;
+        align-items: baseline;
     }
 
     .ulHeder a {
@@ -818,22 +858,6 @@ body {
     .slick-dotted.slick-slider {
         max-height: 365px;
         height: 100%;
-    }
-
-    .header._activee .ulHeder {
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        max-width: 990px;
-        width: 100%;
-        height: 100%;
-        padding-top: 50px;
-        margin-top: 50px;
-        position: fixed;
-        z-index: 10;
-        transition: 0.5s;
-        overflow: auto;
-        align-items: baseline;
     }
 
     .burgerMenuDiv {
@@ -954,6 +978,7 @@ body {
 
     .section1Text {
         padding-top: 100px;
+        padding-bottom: 15px;
     }
 
     .header._activee {
@@ -1035,6 +1060,9 @@ body {
         padding-left: 16px;
     }
 
+    .pTextSection3{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1090,6 +1118,10 @@ body {
 @media (max-width: 715px) {
     .section3Strilka1 {
         display: none;
+    }
+
+    .pTextSection3{
+        font-size: 16px;
     }
 }
 
