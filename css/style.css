@@ -10,12 +10,21 @@ body {
 .hederLogo {
     max-width: 255px;
     width: 100%;
+    width: fit-content;
     height: 27px;
     color: #252A34;
     font-size: 30px;
     font-weight: 700;
     margin: 0;
     text-decoration: none;
+}
+
+.navHeder{
+    display: flex;
+}
+
+.button_Clik{
+    display: flex;
 }
 
 .section1 {
@@ -83,10 +92,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     margin: auto;
     height: 50px;
     margin-top: 22px;
 }
+
+.mobileContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 
 .heder {
     display: flex;
@@ -94,12 +111,12 @@ body {
     max-width: 1230px;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     height: 55px;
 }
 
 .ulHeder a {
     text-decoration: none;
-    padding-right: 30px;
     font-size: 14px;
     color: #252A34;
     transition: 0.3s;
@@ -116,14 +133,25 @@ body {
     margin-top: 10px;
     align-items: center;
     padding: 0;
+    margin: 0 65px;
 }
 
 .ulHeder li {
     list-style: none;
     padding-bottom: 30px;
+    padding: 0 15px;
 }
 
 .hederMenu {
+    display: flex;
+}
+
+
+.burgerMenuDiv{
+    display: none;
+}
+
+.button_container{
     display: flex;
 }
 
@@ -679,6 +707,7 @@ body {
     text-decoration: none;
 }
 
+
 @media (max-width: 1250px) {
     .div__text{
         padding-left: 15px;
@@ -693,11 +722,19 @@ body {
     }
 }
 
-@media (min-width: 1240px) {
-    .hederLogin {
-        margin-right: 30px;
-        margin-left: 100px;
+@media (max-width: 1100px) {
+    .mobileContainer {
+        width: 100%;
     }
+
+    .ulHeder {
+        margin-left: 17px;
+    }
+
+    .ulHeder a {
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 1044px) {
@@ -724,7 +761,11 @@ body {
     }
 
     .ulHeder {
-        padding-left: 70px;
+        margin: 0 -10px;
+    }
+
+    .ulHeder li{
+        padding: 15px 0;
     }
 
     .hederButton {
@@ -749,6 +790,7 @@ body {
     .hederLogo {
         width: 200px;
         font-weight: bold;
+        margin-bottom: 16px;
     }
 
     .ulHeder a {
@@ -756,16 +798,13 @@ body {
         padding-right: 14px;
     }
 
-    .ulHeder {
-        margin: 0;
-    }
-
     .texTopDiv {
         font-size: 18px;
     }
 
-    
-
+    .ulHeder{
+        margin: 0;
+    }
 }
 
 
@@ -788,9 +827,9 @@ body {
     }
 
     .heder {
-        position: fixed;
-        top: 0;
-        bottom: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
 
 
@@ -800,23 +839,42 @@ body {
 
     .header {
         width: 100%;
+        height: 100vh;
+        max-height: 55px;
         background-color: ivory;
         position: fixed;
         z-index: 100;
         margin-top: 0px;
+        transition: 0.5s;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header::after {
+        content: '';
+        width: 100%;
+        height: 70px;
+        max-height: 55px;
+        background-color: ivory;
+        position: absolute;
+        top: 0;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    .header._activee::after {
+        background-color: #FF2E63;
     }
 
     .burgerMenu {
         overflow: auto;
     }
 
-    .ulHeder {
+    .ulHeder{
         display: flex;
-        position: absolute;
         flex-direction: column;
-        left: -100%;
-        top: 0;
-        transition: 0.3s;
+        align-items: flex-start;
         padding: 0;
         flex-wrap: nowrap;
     }
@@ -828,13 +886,16 @@ body {
         max-width: 990px;
         width: 100%;
         height: 100%;
-        padding-top: 50px;
-        margin-top: 50px;
-        position: fixed;
         z-index: 10;
         transition: 0.5s;
         overflow: auto;
         align-items: baseline;
+    }
+
+
+    .button_Clik{
+        display: flex;
+        padding-top: 25px;
     }
 
     .ulHeder a {
@@ -842,7 +903,7 @@ body {
         font-weight: 600;
         font-size: 20px;
         margin-bottom: 30px;
-        padding-left: 16px;
+        padding: 0;
     }
 
     .hederLogin {
@@ -868,6 +929,8 @@ body {
         background-color: #FF2E63;
         align-items: center;
         right: 30px;
+        top: 14px;
+        right: 20px;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -881,29 +944,36 @@ body {
         display: block;
         border-radius: 7px;
         position: fixed;
+        transition: all 0.3s ease 0s;
     }
 
     .burgerMenuDiv:before {
         content: '';
         background-color: #fff;
         position: fixed;
+        position: absolute;
         width: 16px;
         height: 3px;
-        top: 12px;
+        top: 17px;
+        bottom: 5px;
         z-index: 3;
         border-radius: 7px;
+        transition: all 0.3s ease 0s;
     }
 
     .burgerMenuDiv:after {
         content: '';
         background-color: #fff;
         position: fixed;
+        position: absolute;
         width: 16px;
         height: 3px;
         top: 26px;
+        top: 5px;
         display: block;
         z-index: 6;
         border-radius: 7px;
+        transition: all 0.3s ease 0s;
     }
 
     .header._activee .burgerMenuDiv {
@@ -915,20 +985,25 @@ body {
         align-items: center;
         justify-content: center;
         transition: 0.5s;
+        top: 14px;
+        right: 20px;
     }
 
     .header._activee .burgerMenuDiv::before {
         transform: rotate(49deg);
-        top: 20px;
+        top: 11px;
         transition: all 0.3s ease 0s;
         background-color: black;
+        transform: rotate(45deg);
+        bottom: 10px;
+        background-color: #FF2E63;
     }
 
     .header._activee .burgerMenuDiv span {
         transform: rotate(-49deg);
-        top: 20px;
+        top: 25px;
         transition: all 0.3s ease 0s;
-        background-color: black;
+        background-color: #FF2E63;
     }
 
     .header._activee .burgerMenuDiv::after {
@@ -942,7 +1017,6 @@ body {
         left: -100%;
         top: 0;
         transition: 0.3s;
-        margin-top: 430px;
     }
 
     header._activee .hederButton{
@@ -950,9 +1024,8 @@ body {
         top: 0;
         align-items: center;
         justify-content: center;
-        position: absolute;
+        position: relative;
         z-index: 10;
-        margin-left: 16px;
         transition: 0.5s;
     }
 
@@ -963,17 +1036,17 @@ body {
         left: -100%;
         top: 0;
         transition: 0.5s;
-        margin-top: 445px;
-        margin-left: 100px
+
     }
 
     .header._activee .hederLogin {
+        display: flex;
+        position: relative;
         left: 0;
         top: 0;
-        position: absolute;
         z-index: 10;
         padding: 0;
-        margin-left: 170px;
+        top: 11px;
     }
 
     .section1Text {
@@ -991,6 +1064,39 @@ body {
         z-index: 100;
     }
 
+    .mobileContainer{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        left: -100%;
+        top: 0;
+        transition: 0.3s;
+        padding: 0;
+        padding-left: 16px;
+        flex-wrap: nowrap;
+    }
+
+    .header._activee .ulHeder {
+        top: 0;
+    }
+
+    .header._activee .mobileContainer {
+        left: 0;
+        background-color: #fff;
+        max-width: 990px;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        padding-top: 35px;
+        position: fixed;
+        height: 100vh;
+        z-index: 10;
+        transition: 0.5s;
+        overflow: auto;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
     .header._activee .hederLogo{
         color: #fff;
         transition: 0.5s;
@@ -1002,7 +1108,12 @@ body {
     }
 
     .navHeder {
-        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        margin-bottom: 110px;
+        padding-left: 16px;
     }
 
     .section1Logo._activee {
