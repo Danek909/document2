@@ -9,7 +9,7 @@ body {
 
 .hederLogo {
     max-width: 255px;
-    width: 100%;
+    width: fit-content;
     width: fit-content;
     height: 27px;
     color: #252A34;
@@ -91,7 +91,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     justify-content: space-between;
     margin: auto;
     height: 50px;
@@ -107,12 +107,20 @@ body {
 
 .heder {
     display: flex;
-    margin-top: 8px;
-    max-width: 1230px;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 55px;
+}
+
+.mobileContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navHeder{
+    display: flex;
+    margin-right: 20px;
 }
 
 .ulHeder a {
@@ -128,17 +136,16 @@ body {
 
 .ulHeder {
     display: flex;
-    max-width: 630px;
-    width: 100%;
     margin-top: 10px;
     align-items: center;
     padding: 0;
     margin: 0 65px;
+    margin: 0 -15px;
 }
 
 .ulHeder li {
     list-style: none;
-    padding-bottom: 30px;
+    padding: 0 15px;
     padding: 0 15px;
 }
 
@@ -183,6 +190,14 @@ body {
 
 .hederButton:hover {
     background-color: #cb1040;
+}
+
+.burgerMenuDiv{
+    display: none;
+}
+
+.button_container{
+    display: flex;
 }
 
 .section1Button:hover {
@@ -737,14 +752,21 @@ body {
 
 }
 
-@media (max-width: 1044px) {
-    .navHeder {
-        margin-left: 0;
+@media (max-width: 1100px) {
+    .mobileContainer{
+        width: 100%;
     }
-
 }
 
 @media (max-width: 1024px) {
+
+    .ulHeder{
+        margin: 0 -10px;
+    }
+
+    .ulHeder li{
+        padding: 10px;
+    }
 
     .sliderText {
         margin: 0 23px;
@@ -758,14 +780,6 @@ body {
 
     .slaiderTextSpan {
         padding-bottom: 30px;
-    }
-
-    .ulHeder {
-        margin: 0 -10px;
-    }
-
-    .ulHeder li{
-        padding: 15px 0;
     }
 
     .hederButton {
@@ -795,15 +809,10 @@ body {
 
     .ulHeder a {
         padding-top: 10px;
-        padding-right: 14px;
     }
 
     .texTopDiv {
         font-size: 18px;
-    }
-
-    .ulHeder{
-        margin: 0;
     }
 }
 
@@ -826,15 +835,15 @@ body {
         display: none;
     }
 
-    .heder {
-        width: 100%;
-        height: 100%;
-        position: relative;
+    .section2Div .slick-slide .slick-active {
+        min-width: 280px;
     }
 
 
-    .section2Div .slick-slide .slick-active {
-        min-width: 280px;
+    .hederLogo{
+        position: absolute;
+        top: 10px;
+        left: 0;
     }
 
     .header {
@@ -865,10 +874,73 @@ body {
 
     .header._activee::after {
         background-color: #FF2E63;
+        overflow: scroll;
+        transition: 0.5s;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .header::after {
+        content: '';
+        width: 100%;
+        height: 70px;
+        max-height: 55px;
+        background-color: ivory;
+        position: absolute;
+        top: 0;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    .header._activee::after {
+        background-color: #FF2E63;
+    }
+
+    .heder{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .header._activee .heder{
+        margin-top: 70px;
+    }
+
+    .header._activee{
+        max-height: 100vh;
     }
 
     .burgerMenu {
         overflow: auto;
+    }
+
+    .mobileContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .header._activee .mobileContainer {
+        left: 0;
+        background-color: #fff;
+        max-width: 990px;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        transition: 0.5s;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
+    .navHeder {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        margin-bottom: 30px;
     }
 
     .ulHeder{
@@ -877,19 +949,6 @@ body {
         align-items: flex-start;
         padding: 0;
         flex-wrap: nowrap;
-    }
-
-    .header._activee .ulHeder {
-        top: 0;
-        left: 0;
-        background-color: #fff;
-        max-width: 990px;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        transition: 0.5s;
-        overflow: auto;
-        align-items: baseline;
     }
 
 
@@ -906,16 +965,6 @@ body {
         padding: 0;
     }
 
-    .hederLogin {
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-
-    .hederButton {
-        position: absolute;
-    }
-
     .slick-dotted.slick-slider {
         max-height: 365px;
         height: 100%;
@@ -928,7 +977,8 @@ body {
         height: 24px;
         background-color: #FF2E63;
         align-items: center;
-        right: 30px;
+        top: 14px;
+        right: 20px;
         top: 14px;
         right: 20px;
         border-radius: 5px;
@@ -943,18 +993,17 @@ body {
         height: 3px;
         display: block;
         border-radius: 7px;
-        position: fixed;
+        transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
     }
 
     .burgerMenuDiv:before {
         content: '';
         background-color: #fff;
-        position: fixed;
+        position: absolute;
         position: absolute;
         width: 16px;
         height: 3px;
-        top: 17px;
         bottom: 5px;
         z-index: 3;
         border-radius: 7px;
@@ -964,11 +1013,11 @@ body {
     .burgerMenuDiv:after {
         content: '';
         background-color: #fff;
-        position: fixed;
+        position: absolute;
         position: absolute;
         width: 16px;
         height: 3px;
-        top: 26px;
+        top: 5px;
         top: 5px;
         display: block;
         z-index: 6;
@@ -990,63 +1039,19 @@ body {
     }
 
     .header._activee .burgerMenuDiv::before {
-        transform: rotate(49deg);
-        top: 11px;
-        transition: all 0.3s ease 0s;
-        background-color: black;
         transform: rotate(45deg);
         bottom: 10px;
         background-color: #FF2E63;
     }
 
     .header._activee .burgerMenuDiv span {
-        transform: rotate(-49deg);
-        top: 25px;
-        transition: all 0.3s ease 0s;
-        background-color: #FF2E63;
+        background-color: transparent;
     }
 
     .header._activee .burgerMenuDiv::after {
-        transform: scale(0);
-    }
-
-    .hederButton {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        left: -100%;
-        top: 0;
-        transition: 0.3s;
-    }
-
-    header._activee .hederButton{
-        left: 0;
-        top: 0;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 10;
-        transition: 0.5s;
-    }
-
-    .hederLogin {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        left: -100%;
-        top: 0;
-        transition: 0.5s;
-
-    }
-
-    .header._activee .hederLogin {
-        display: flex;
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 10;
-        padding: 0;
+        transform: rotate(-45deg);
         top: 11px;
+        background-color: #FF2E63;
     }
 
     .section1Text {
@@ -1056,8 +1061,6 @@ body {
 
     .header._activee {
         position: fixed;
-        background-color: #FF2E63;
-        height: 55px;
         left: 0;
         top: 0;
         transition: 0.5s;
@@ -1105,15 +1108,6 @@ body {
     .header._activee .spanAuto{
         color: #fff;
         transition: 0.5s;
-    }
-
-    .navHeder {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0;
-        margin-bottom: 110px;
-        padding-left: 16px;
     }
 
     .section1Logo._activee {
