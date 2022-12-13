@@ -86,16 +86,14 @@ body {
     color: #FF2E63;
 }
 
-.header {
+.heder {
+    display: flex;
+    margin-top: 8px;
     max-width: 1230px;
     width: 100%;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    justify-content: space-between;
-    margin: auto;
-    height: 50px;
-    margin-top: 22px;
+    height: 55px;
 }
 
 .mobileContainer{
@@ -110,6 +108,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 55px;
+    margin: 0 auto;
 }
 
 .mobileContainer{
@@ -125,6 +124,7 @@ body {
 
 .ulHeder a {
     text-decoration: none;
+    padding-right: 0 15px;
     font-size: 14px;
     color: #252A34;
     transition: 0.3s;
@@ -136,16 +136,17 @@ body {
 
 .ulHeder {
     display: flex;
+    max-width: 630px;
+    width: 100%;
     margin-top: 10px;
     align-items: center;
     padding: 0;
     margin: 0 65px;
-    margin: 0 -15px;
 }
 
 .ulHeder li {
     list-style: none;
-    padding: 0 15px;
+    padding-bottom: 30px;
     padding: 0 15px;
 }
 
@@ -753,8 +754,16 @@ body {
 }
 
 @media (max-width: 1100px) {
-    .mobileContainer{
+    .mobileContainer {
         width: 100%;
+    }
+
+    .ulHeder {
+        margin-left: 17px;
+    }
+
+    .ulHeder a {
+        font-size: 12px;
     }
 }
 
@@ -766,6 +775,7 @@ body {
 
     .ulHeder li{
         padding: 10px;
+        width: 100%;
     }
 
     .sliderText {
@@ -903,10 +913,6 @@ body {
         position: relative;
     }
 
-    .header._activee .heder{
-        margin-top: 70px;
-    }
-
     .header._activee{
         max-height: 100vh;
     }
@@ -955,6 +961,7 @@ body {
     .button_Clik{
         display: flex;
         padding-top: 25px;
+        margin-bottom: 100px;
     }
 
     .ulHeder a {
@@ -1103,11 +1110,13 @@ body {
     .header._activee .hederLogo{
         color: #fff;
         transition: 0.5s;
+        z-index: 10;
     }
 
     .header._activee .spanAuto{
         color: #fff;
         transition: 0.5s;
+        z-index: 10;
     }
 
     .section1Logo._activee {
