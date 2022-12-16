@@ -41,6 +41,7 @@ body {
 
 .div__text {
     width: 100%;
+    margin-top: 110px;
 }
 
 .divImg {
@@ -59,7 +60,9 @@ body {
 .section1Text {
     font-size: 50px;
     font-weight: 700;
-    padding-top: 80px;
+    margin: 0;
+    padding-bottom: 50px;
+   
 }
 
 .section1Auto {
@@ -211,6 +214,7 @@ body {
     font-size: 36px;
     color: #343434;
     margin-left: 15px;
+    margin-bottom: 40px;
 }
 
 .section2Div {
@@ -584,6 +588,7 @@ body {
     color: #343434;
     font-size: 16px;
     padding-bottom: 40px;
+    font-weight: 400;
 }
 
 .slick-dots li {
@@ -600,10 +605,9 @@ body {
 
 .slick-dots {
     bottom: 60px;
-    max-width: 200px;
+    max-width: 525px;
     width: 100%;
     position: absolute;
-    right: 70%;
 }
 
 .section3Logo {
@@ -736,9 +740,15 @@ body {
     .hederButton{
         margin-right: 15px;
     }
+
+    .slick-dots{
+        width: 42%;
+    }
 }
 
-@media (max-width: 1100px) {
+
+
+@media (max-width: 1140px) {
     .mobileContainer {
         width: 100%;
     }
@@ -759,7 +769,7 @@ body {
     }
 
     .ulHeder {
-        margin-left: 17px;
+        margin-left: 11px;
     }
 
     .ulHeder a {
@@ -775,7 +785,6 @@ body {
 
     .ulHeder li{
         padding: 10px;
-        width: 100%;
     }
 
     .sliderText {
@@ -785,7 +794,10 @@ body {
 
     .slick-dots {
         bottom: 20px;
-        right: 75%;
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        width: 100%;
     }
 
     .slaiderTextSpan {
@@ -799,6 +811,7 @@ body {
     .section1Text {
         margin: 0;
         font-size: 47px;
+        padding-bottom: 50px;
     }
 
     .section1Auto {
@@ -833,8 +846,16 @@ body {
         overflow: hidden;
     }
 
+    .ulHeder li {
+        width: 100%;
+    }
+
     .divImg {
         margin-top: 35px;
+    }
+
+    .div__text{
+        margin-top: 123px;
     }
 
     body._activee {
@@ -1062,8 +1083,7 @@ body {
     }
 
     .section1Text {
-        padding-top: 100px;
-        padding-bottom: 15px;
+        padding-bottom: 30px;
     }
 
     .header._activee {
@@ -1140,16 +1160,17 @@ body {
     }
 
     .divImgSlider {
-        max-width: 580px;
-        width: 100%;
+        width: 50%;
         min-height: 363px;
     }
 
     .sliderText {
-        margin: 0;
         padding-top: 0;
     }
 
+    .subtaitle{
+        justify-content: space-between;
+    }
 
     .footer {
         flex-direction: column;
@@ -1189,6 +1210,10 @@ body {
         margin-left: 0px;
     }
 
+    .section1Text{
+        font-size: 40px;
+    }
+
     .sectio1Img4 {
         margin: 0px;
     }
@@ -1205,6 +1230,7 @@ body {
     .sectionText {
         display: flex;
         flex-wrap: wrap;
+        width: 89%;
     }
 
     .divImgSlider {
@@ -1215,10 +1241,6 @@ body {
         margin-bottom: 161px;
     }
 
-    .slick-dots {
-        right: 65%;
-    }
-
     .ulLi {
         margin-right: 0px;
         flex-wrap: wrap;
@@ -1227,9 +1249,10 @@ body {
     .ulLi li {
         padding-top: 5px;
     }
+    
 }
 
-@media (max-width: 715px) {
+@media (max-width: 716px) {
     .section3Strilka1 {
         display: none;
     }
@@ -1239,11 +1262,31 @@ body {
     }
 }
 
+@media (max-width: 680px) {
+    .sectionText{
+        width: 100%;
+    }
+
+    .section1Text{
+        padding-top: 0px;
+    }
+}
+
 @media (max-width: 610px) {
 
     .div__1 {
         flex-wrap: wrap;
     }
+
+    .div__text{
+        margin-top: 147px;
+    }
+
+    .section1Text{
+        font-size: 47px;
+    }
+
+
 
     .slick-slide img.divImgSlider {
         display: none;
@@ -1255,7 +1298,7 @@ body {
     }
 
     .slick-dots {
-        right: 35%;
+        max-width: 600px;
     }
 
     .subtaitle {
@@ -1303,16 +1346,11 @@ body {
         font-size: 45px;
     }
 
-    .slick-dots {
-        right: 28%;
-    }
-
     .section2 {
         margin-bottom: 100px;
     }
 
     .footerLogo {
-        margin-bottom: 0;
         margin-top: 0;
     }
 
@@ -1343,10 +1381,6 @@ body {
 
     .divImg {
         margin-bottom: 150px;
-    }
-
-    .slick-dots {
-        right: 24%;
     }
 
     .sectio1Img4 {
