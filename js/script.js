@@ -46,9 +46,17 @@ $(document).ready(function () {
                 breakpoint: 610,
                 settings: {
                     slidesToShow: 2,
-                    slidesToShow: 1,
+                    slidesToShow: 1.07,
                 }
-            }
+            },
+
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToShow: 1.04,
+                }
+            },
         ]
     });
 });
@@ -84,7 +92,15 @@ $(document).ready(function () {
                 breakpoint: 610,
                 settings: {
                     slidesToShow: 2,
-                    slidesToShow: 1,
+                    slidesToShow: 1.07,
+                }
+            },
+
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToShow: 1.04,
                 }
             },
 
