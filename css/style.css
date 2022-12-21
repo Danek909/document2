@@ -553,6 +553,10 @@ body {
     font-family: "OpenSans";
 }
 
+.slider_item.slick-slide.slick-current.slick-active p{
+    font-weight: 600;
+}
+
 .slick-next:before {
     position: relative;
 }
