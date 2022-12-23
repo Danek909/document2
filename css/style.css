@@ -5,6 +5,9 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&family=Rajdhani:wght@700&display=swap');
+
+
 .sectio1Span {
     color: #FF2E63;
 }
@@ -19,6 +22,7 @@ body {
     font-weight: 700;
     margin: 0;
     text-decoration: none;
+    font-family: "Rajdhani";
 }
 
 .navHeder{
@@ -64,6 +68,7 @@ body {
     font-weight: 700;
     margin: 0;
     padding-bottom: 50px;
+    font-family: "Rajdhani";
    
 }
 
@@ -85,6 +90,7 @@ body {
     color: #fff;
     border-radius: 5px;
     border: 0px;
+    font-family: "OpenSans";
 }
 
 .spanAuto {
@@ -133,6 +139,7 @@ body {
     font-size: 14px;
     color: #252A34;
     transition: 0.3s;
+    font-family: "OpenSans";
 }
 
 .ulHeder a:hover {
@@ -178,6 +185,7 @@ body {
     background-color: #fff;
     border: 0;
     padding-top: 8px;
+    font-family: "OpenSans";
 }
 
 .hederLogin:hover {
@@ -192,6 +200,7 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #FF2E63;
+    font-family: "OpenSans";
 }
 
 .hederButton:hover {
@@ -217,6 +226,7 @@ body {
     color: #343434;
     margin-left: 15px;
     margin-bottom: 40px;
+    font-family: "Rajdhani";
 }
 
 .section2Div {
@@ -267,6 +277,7 @@ body {
     font-size: 20px;
     margin-left: 20px;
     margin-bottom: 0px;
+    font-family: "Rajdhani";
 }
 
 .section2 {
@@ -329,18 +340,21 @@ body {
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 0;
+    font-family: "Rajdhani";
 }
 
 .dolar_span {
     text-decoration-line: line-through;
     font-size: 20px;
     color: #999999;
+    font-family: "Rajdhani";
 }
 
 .div4text {
     font-size: 14px;
     color: #343434;
     margin-left: 20px;
+    font-family: "Rajdhani";
 }
 
 .some_class {
@@ -535,6 +549,7 @@ body {
     color: #343434;
     font-weight: 400;
     margin: 0;
+    font-family: "OpenSans";
 }
 
 .slider {
@@ -594,6 +609,7 @@ body {
     font-size: 16px;
     padding-bottom: 40px;
     font-weight: 400;
+    font-family: "OpenSans";
 }
 
 .slick-dots li {
@@ -622,6 +638,7 @@ body {
     color: #343434;
     font-weight: 700;
     margin-left: 15px;
+    font-family: "Rajdhani";
 }
 
 .section4Img {
@@ -650,12 +667,14 @@ body {
     font-size: 20px;
     font-weight: 700;
     padding-left: 20px;
+    font-family: "Rajdhani";
 }
 
 .textAutoS3 {
     color: #343434;
     font-size: 14px;
     padding-left: 20px;
+    font-family: "OpenSans";
 }
 
 .footer {
@@ -675,6 +694,7 @@ body {
     margin-left: 55px;
     max-width: 158px;
     width: 100%;
+    font-family: "Rajdhani";
 }
 
 .ulText {
@@ -706,6 +726,7 @@ body {
     list-style-type: none;
     transition: 0.3s;
     text-decoration: none;
+    font-family: "OpenSans";
 }
 
 .ulLi li {
@@ -1307,6 +1328,14 @@ body {
         max-width: 600px;
     }
 
+    .sumtailClas{
+        margin-left: 16px;
+    }
+
+    .divSection4{
+        margin-left: 16px;
+    }
+
     .subtaitle {
         margin-bottom: 60px;
     }
@@ -1392,10 +1421,6 @@ body {
     .sectio1Img4 {
         max-width: 250px;
         padding-right: 51px;
-    }
-
-    .section4Img {
-        min-width: 280px;
     }
 
     .section2H2 {
