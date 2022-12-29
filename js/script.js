@@ -45,16 +45,14 @@ $(document).ready(function () {
             {
                 breakpoint: 610,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToShow: 1.03,
+                    slidesToShow: 1.05,
                 }
             },
 
             {
                 breakpoint: 375,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToShow: 1.06,
+                    slidesToShow: 1.1,
                 }
             },
         ]
@@ -91,16 +89,16 @@ $(document).ready(function () {
             {
                 breakpoint: 610,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToShow: 1.03,
+                    
+                    slidesToShow: 1.07,
                 }
             },
 
             {
                 breakpoint: 375,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToShow: 1.06,
+                    
+                    slidesToShow: 1.1,
                 }
             },
 
